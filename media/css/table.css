@@ -1,0 +1,10 @@
+/* Nicode Toolkit - TableBuilder */
+.nx-table-wrap{font-size:.85rem}
+.nx-table-scroll{max-height:65vh;overflow:auto;border-radius:0 0 .75rem .75rem;background:#fff;border:1px solid rgba(0,0,0,.075)}
+.nx-table-wrap table{margin-bottom:0}
+.nx-table-head{background-color:#f1f3f5;color:#343a40;border-bottom:2px solid #dee2e6}
+.nx-table-head th{position:sticky;top:0;z-index:2;text-transform:uppercase;letter-spacing:.04em;font-size:.75rem}
+.nx-table-wrap tbody tr:hover{background-color:rgba(64,168,228,.08);transition:background-color .15s ease-in-out}
+.nx-highlight{background-color:#40a8e4 !important;color:#fff !important}
+.nx-highlight a{color:#fff !important;text-decoration:underline}
+.nx-table-wrap tbody tr:nth-of-type(even){background-color:#f8f9fa}

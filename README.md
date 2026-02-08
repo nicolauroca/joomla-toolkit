@@ -1,4 +1,4 @@
-# Nicode Joomla Toolkit (Joomla Library)
+# Nicodé Joomla Toolkit (Joomla Library)
 
 A small, modern helper library you can install in Joomla and reuse across your components, modules, and plugins.
 
@@ -48,6 +48,6 @@ All code and assets in this package are licensed under the GNU General Public Li
 
 This library declares an update server in the manifest. Host the update XML at:
 
-- `https://nicolauroca.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml`
+- `https://nicode.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml`
 
 See `updates/` in this repository for the files you need to publish.

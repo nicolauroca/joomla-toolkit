@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "lib_nicode_joomla_toolkit",
+  "version": "1.0.0",
+  "assets": [
+    {
+      "name": "lib_nicode_joomla_toolkit.table",
+      "type": "style",
+      "uri": "lib_nicode_joomla_toolkit/css/table.css"
+    },
+    {
+      "name": "lib_nicode_joomla_toolkit.progress",
+      "type": "style",
+      "uri": "lib_nicode_joomla_toolkit/css/progressbar.css"
+    }
+  ]
+}
