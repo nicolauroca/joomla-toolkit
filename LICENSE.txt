@@ -1,0 +1,10 @@
+GNU GENERAL PUBLIC LICENSE
+Version 2, June 1991
+
+This license applies to all PHP source code files of the Nicode Joomla Toolkit Joomla library,
+unless stated otherwise.
+
+Copyright (C) 2026 Nicolau Roca
+
+You should have received a copy of the GNU General Public License along with this program.
+If not, see https://www.gnu.org/licenses/old-licenses/gpl-2.0.html

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" method="upgrade">
+  
+  
+  <name>LIB_NICODE_JOOMLA_TOOLKIT</name>
+  
+  
+  <libraryname>NicodeJoomlaToolkit</libraryname>
+  
+  
+  <author>Nicolau Roca</author>
+  
+  
+  <creationDate>2026-02-08</creationDate>
+  
+  
+  <copyright>Copyright (C) 2026 Nicolau Roca</copyright>
+  
+  
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  
+  
+  <version>1.0.3</version>
+  
+  
+  <description>LIB_NICODE_JOOMLA_TOOLKIT_DESC</description>
+  
+
+  
+  <namespace path="src">Nicode\Joomla\Toolkit</namespace>
+  
+
+  
+  <files>
+    
+    
+    <folder>src</folder>
+    
+    
+    <filename>LICENSE.txt</filename>
+    
+    
+    <filename>NOTICE.txt</filename>
+    
+    
+    <filename>README.md</filename>
+    
+  
+  </files>
+  
+
+  
+  <media folder="media" destination="lib_nicode_joomla_toolkit">
+    
+    
+    <folder>css</folder>
+    
+    
+    <file>joomla.asset.json</file>
+    
+  
+  </media>
+  
+
+  
+  <languages>
+    
+    
+    <language tag="en-GB">language/en-GB/lib_nicode_joomla_toolkit.ini</language>
+    
+    
+    <language tag="en-GB">language/en-GB/lib_nicode_joomla_toolkit.sys.ini</language>
+    
+    
+    <language tag="es-ES">language/es-ES/lib_nicode_joomla_toolkit.ini</language>
+    
+    
+    <language tag="es-ES">language/es-ES/lib_nicode_joomla_toolkit.sys.ini</language>
+    
+  
+  </languages>
+  
+
+  <updateservers>
+    <server type="extension" name="lib_nicode_joomla_toolkit" priority="1">https://nicode.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml</server>
+  </updateservers>
+</extension>

@@ -1,0 +1,7 @@
+nicode – Joomla Toolkit (lib_nicode_joomla_toolkit)
+Copyright (C) 2026 Nicolau Roca
+
+This package is licensed under the GNU General Public License version 2 or later (GPLv2+).
+See LICENSE.txt for the full text.
+
+Version: 1.0.2
