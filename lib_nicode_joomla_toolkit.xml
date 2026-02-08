@@ -63,22 +63,13 @@
   
 
   
-  <languages>
-    
-    
-    <language tag="en-GB">language/en-GB/lib_nicode_joomla_toolkit.ini</language>
-    
-    
-    <language tag="en-GB">language/en-GB/lib_nicode_joomla_toolkit.sys.ini</language>
-    
-    
-    <language tag="es-ES">language/es-ES/lib_nicode_joomla_toolkit.ini</language>
-    
-    
-    <language tag="es-ES">language/es-ES/lib_nicode_joomla_toolkit.sys.ini</language>
-    
-  
-  </languages>
+<languages>
+  <language tag="en-GB">language/en-GB/en-GB.lib_nicode_joomla_toolkit.ini</language>
+  <language tag="en-GB">language/en-GB/en-GB.lib_nicode_joomla_toolkit.sys.ini</language>
+  <language tag="es-ES">language/es-ES/es-ES.lib_nicode_joomla_toolkit.ini</language>
+  <language tag="es-ES">language/es-ES/es-ES.lib_nicode_joomla_toolkit.sys.ini</language>
+</languages>
+
   
 
   <updateservers>
