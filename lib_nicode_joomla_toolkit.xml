@@ -20,7 +20,7 @@
   <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
   
   
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   
   
   <description>LIB_NICODE_JOOMLA_TOOLKIT_DESC</description>
@@ -60,19 +60,14 @@
     
   
   </media>
-  
+  <languages folder="language">
+    <language tag="en-GB" client="administrator">en-GB/en-GB.lib_nicode_joomla_toolkit.ini</language>
+    <language tag="en-GB" client="administrator">en-GB/en-GB.lib_nicode_joomla_toolkit.sys.ini</language>
+    <language tag="es-ES" client="administrator">es-ES/es-ES.lib_nicode_joomla_toolkit.ini</language>
+    <language tag="es-ES" client="administrator">es-ES/es-ES.lib_nicode_joomla_toolkit.sys.ini</language>
+  </languages>
 
-  
-<languages>
-  <language tag="en-GB">language/en-GB/en-GB.lib_nicode_joomla_toolkit.ini</language>
-  <language tag="en-GB">language/en-GB/en-GB.lib_nicode_joomla_toolkit.sys.ini</language>
-  <language tag="es-ES">language/es-ES/es-ES.lib_nicode_joomla_toolkit.ini</language>
-  <language tag="es-ES">language/es-ES/es-ES.lib_nicode_joomla_toolkit.sys.ini</language>
-</languages>
-
-  
-
-  <updateservers>
-    <server type="extension" name="lib_nicode_joomla_toolkit" priority="1">https://nicolauroca.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml</server>
+<updateservers>
+    <server type="extension" name="lib_nicode_joomla_toolkit" priority="1">https://nicode.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml</server>
   </updateservers>
 </extension>

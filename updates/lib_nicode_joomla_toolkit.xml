@@ -5,11 +5,11 @@
     <description>Reusable utilities library for Joomla extensions.</description>
     <element>lib_nicode_joomla_toolkit</element>
     <type>library</type>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <downloads>
-      <downloadurl type="full" format="zip">https://github.com/nicolauroca/joomla-toolkit/releases/download/v1.0.3/lib_nicode_joomla_toolkit-1.0.3.zip</downloadurl>
+      <downloadurl type="full" format="zip">https://github.com/nicode/joomla-toolkit/releases/download/v1.0.4/lib_nicode_joomla_toolkit-1.0.4.zip</downloadurl>
     </downloads>
-    <infourl title="Release notes">https://nicolauroca.github.io/joomla-toolkit/updates/releases/1.0.3.html</infourl>
+    <infourl title="Release notes">https://nicode.github.io/joomla-toolkit/updates/releases/1.0.4.html</infourl>
     <tags>
       <tag>stable</tag>
     </tags>

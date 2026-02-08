@@ -5,14 +5,14 @@
   ]]></core_body>
 
   <!-- Valid links only or leave blank -->
-  <homepage_link>https://github.com/nicolauroca/joomla-toolkit</homepage_link>
-  <download_link>https://github.com/nicolauroca/joomla-toolkit/releases</download_link>
+  <homepage_link>https://github.com/nicode/joomla-toolkit</homepage_link>
+  <download_link>https://github.com/nicode/joomla-toolkit/releases</download_link>
   <demo_link></demo_link>
-  <documentation_link>https://github.com/nicolauroca/joomla-toolkit#readme</documentation_link>
-  <support_link>https://github.com/nicolauroca/joomla-toolkit/issues</support_link>
-  <license_link>https://github.com/nicolauroca/joomla-toolkit/blob/main/LICENSE.txt</license_link>
+  <documentation_link>https://github.com/nicode/joomla-toolkit#readme</documentation_link>
+  <support_link>https://github.com/nicode/joomla-toolkit/issues</support_link>
+  <license_link>https://github.com/nicode/joomla-toolkit/blob/main/LICENSE.txt</license_link>
 
-  <version>1.0.3</version>
+  <version>1.0.4</version>
   <compatibility>
     <version>60</version>
   </compatibility>
