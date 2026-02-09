@@ -72,6 +72,6 @@
   </languages>
 
 <updateservers>
-    <server type="extension" name="lib_nicode_joomla_toolkit" priority="1">https://nicode.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml</server>
+    <server type="extension" name="lib_nicode_joomla_toolkit" priority="1">https://nicolauroca.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml</server>
   </updateservers>
 </extension>
