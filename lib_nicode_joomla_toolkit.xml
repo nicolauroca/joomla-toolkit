@@ -63,8 +63,12 @@
   <languages folder="language">
     <language tag="en-GB" client="administrator">en-GB/en-GB.lib_nicode_joomla_toolkit.ini</language>
     <language tag="en-GB" client="administrator">en-GB/en-GB.lib_nicode_joomla_toolkit.sys.ini</language>
+    <language tag="en-GB" client="site">en-GB/en-GB.lib_nicode_joomla_toolkit.ini</language>
+    <language tag="en-GB" client="site">en-GB/en-GB.lib_nicode_joomla_toolkit.sys.ini</language>
     <language tag="es-ES" client="administrator">es-ES/es-ES.lib_nicode_joomla_toolkit.ini</language>
     <language tag="es-ES" client="administrator">es-ES/es-ES.lib_nicode_joomla_toolkit.sys.ini</language>
+    <language tag="es-ES" client="site">es-ES/es-ES.lib_nicode_joomla_toolkit.ini</language>
+    <language tag="es-ES" client="site">es-ES/es-ES.lib_nicode_joomla_toolkit.sys.ini</language>
   </languages>
 
 <updateservers>
