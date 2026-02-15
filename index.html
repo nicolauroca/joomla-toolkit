@@ -1,14 +1,227 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>nicode/joomla-toolkit</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nicode Joomla Toolkit</title>
+
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #111827;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+header p {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  margin-top: 50px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th {
+  background: #f3f4f6;
+}
+
+code {
+  background: #111827;
+  color: #e5e7eb;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+pre {
+  background: #111827;
+  color: #e5e7eb;
+  padding: 15px;
+  overflow-x: auto;
+  border-radius: 6px;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  background: #111827;
+  color: #ccc;
+}
+</style>
 </head>
+
 <body>
-  <h1>nicode/joomla-toolkit</h1>
-  <p>Update feed:</p>
-  <ul>
-    <li><a href="updates/lib_nicode_joomla_toolkit.xml">updates/lib_nicode_joomla_toolkit.xml</a></li>
-  </ul>
+
+<header>
+  <h1>Nicode Joomla Toolkit</h1>
+  <p>Reusable utility library for Joomla 4, 5 and 6 extension development.</p>
+</header>
+
+<div class="container">
+
+<h2>Overview</h2>
+<p>
+Nicode Joomla Toolkit is a lightweight PHP library designed to reduce repetitive 
+code in Joomla extensions. It centralizes common tasks such as database queries,
+asset registration, request handling, escaping, UI helpers and file maintenance.
+</p>
+
+<h2>Compatibility</h2>
+<ul>
+<li>Joomla 4.x</li>
+<li>Joomla 5.x</li>
+<li>Joomla 6.x</li>
+</ul>
+
+<h2>Installation</h2>
+<p>Install the ZIP package via:</p>
+<pre>System → Install → Extensions</pre>
+
+<h2>Included Modules</h2>
+
+<table>
+<tr>
+<th>Module</th>
+<th>Class</th>
+<th>Purpose</th>
+</tr>
+
+<tr>
+<td>Assets</td>
+<td><code>Nicode\Joomla\Toolkit\Assets</code></td>
+<td>Registers CSS/JS assets via WebAssetManager</td>
+</tr>
+
+<tr>
+<td>Db</td>
+<td><code>Nicode\Joomla\Toolkit\Db\Database</code></td>
+<td>Query facade with bind support</td>
+</tr>
+
+<tr>
+<td>Input</td>
+<td><code>Nicode\Joomla\Toolkit\Input\Request</code></td>
+<td>Safe GET/POST access</td>
+</tr>
+
+<tr>
+<td>Date</td>
+<td><code>Nicode\Joomla\Toolkit\Date\DateText</code></td>
+<td>Human-readable date ranges</td>
+</tr>
+
+<tr>
+<td>Html</td>
+<td><code>Nicode\Joomla\Toolkit\Html\Esc</code></td>
+<td>Safe HTML escaping helpers</td>
+</tr>
+
+<tr>
+<td>Html</td>
+<td><code>Nicode\Joomla\Toolkit\Html\TableBuilder</code></td>
+<td>Generate accessible tables from arrays</td>
+</tr>
+
+<tr>
+<td>Ui</td>
+<td><code>Nicode\Joomla\Toolkit\Ui\ProgressBar</code></td>
+<td>Accessible progress bar component</td>
+</tr>
+
+<tr>
+<td>Fs</td>
+<td><code>Nicode\Joomla\Toolkit\Fs\Cleaner</code></td>
+<td>Old file cleanup utility</td>
+</tr>
+
+<tr>
+<td>Util</td>
+<td><code>Nicode\Joomla\Toolkit\Util\Arr</code></td>
+<td>Array filtering helpers</td>
+</tr>
+
+</table>
+
+<h2>Basic Usage</h2>
+
+<pre>
+use Nicode\Joomla\Toolkit\Db\Database;
+
+$value = Database::result('SELECT 1');
+</pre>
+
+<h2>Web Assets</h2>
+<p>
+Installs <code>media/lib_nicode_joomla_toolkit/joomla.asset.json</code>
+with table and progress bar styles ready to use.
+</p>
+
+<h2>Resources</h2>
+<ul>
+<li><a href="https://github.com/nicolauroca/joomla-toolkit" target="_blank">GitHub Repository</a></li>
+<li><a href="https://github.com/nicolauroca/joomla-toolkit/releases" target="_blank">Releases</a></li>
+<li><a href="https://nicolauroca.dev/" target="_blank">Developer Website</a></li>
+</ul>
+
+<h2>Update Server</h2>
+<p>
+Update XML hosted at:<br>
+<code>https://nicolauroca.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml</code>
+</p>
+
+</div>
+
+<footer>
+© 2026 Nicolau Roca — GNU GPL v2 or later
+</footer>
+
 </body>
 </html>

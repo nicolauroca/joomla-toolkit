@@ -1,77 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="library" method="upgrade">
+<extension type="library" method="upgrade" version="1.0.0">
   
-  
-  <name>LIB_NICODE_JOOMLA_TOOLKIT</name>
-  
-  
-  <libraryname>NicodeJoomlaToolkit</libraryname>
-  
-  
+  <name>Nicode Joomla Toolkit</name>
+  <libraryname>lib_nicode_joomla_toolkit</libraryname>
   <author>Nicolau Roca</author>
-  
-  
-  <creationDate>2026-02-08</creationDate>
-  
-  
+  <authorEmail>data@nicolauroca.com</authorEmail>
+  <authorUrl>www.nicolauroca.com</authorUrl>
+  <creationDate>2026-01-01</creationDate>
   <copyright>Copyright (C) 2026 Nicolau Roca</copyright>
-  
-  
   <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-  
-  
-  <version>1.0.4</version>
-  
-  
-  <description>LIB_NICODE_JOOMLA_TOOLKIT_DESC</description>
-  
-
-  
+  <version>1.0.0</version>
+  <description>
+    A lightweight and structured PHP toolkit for Joomla 6.x focused on improving code quality, modularity, and maintainability in custom extension development.<br><br>Source code and documentation available on GitHub.<br><br><a href='https://github.com/nicolauroca/joomla-toolkit' target='_blank'>GitHub Repository</a> | <a href='https://nicolauroca.dev/' target='_blank'>Developer Website</a>
+  </description>
   <namespace path="src">Nicode\Joomla\Toolkit</namespace>
   
-
-  
-  <files>
-    
-    
+  <files>    
     <folder>src</folder>
-    
-    
+    <filename>lib_nicode_joomla_toolkit.xml</filename>
     <filename>LICENSE.txt</filename>
-    
-    
     <filename>NOTICE.txt</filename>
-    
-    
     <filename>README.md</filename>
-    
-  
   </files>
   
-
-  
   <media folder="media" destination="lib_nicode_joomla_toolkit">
-    
-    
     <folder>css</folder>
-    
-    
     <file>joomla.asset.json</file>
-    
-  
   </media>
-  <languages folder="language">
-    <language tag="en-GB">en-GB/en-GB.lib_nicode_joomla_toolkit.ini</language>
-    <language tag="es-ES">es-ES/es-ES.lib_nicode_joomla_toolkit.ini</language>
-  </languages>
-  <administration>
-    <languages folder="language">
-      <language tag="en-GB">en-GB/en-GB.lib_nicode_joomla_toolkit.sys.ini</language>
-      <language tag="es-ES">es-ES/es-ES.lib_nicode_joomla_toolkit.sys.ini</language>
-    </languages>
-  </administration>
 
 <updateservers>
-    <server type="extension" name="lib_nicode_joomla_toolkit" priority="1">https://nicolauroca.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml</server>
+    <server type="extension" name="lib_nicode_joomla_toolkit" priority="1">
+      https://nicolauroca.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml
+    </server>
   </updateservers>
 </extension>
+

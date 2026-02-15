@@ -3,18 +3,28 @@
   <update>
     <name>Nicode Joomla Toolkit</name>
     <description>Reusable utilities library for Joomla extensions.</description>
+
     <element>lib_nicode_joomla_toolkit</element>
     <type>library</type>
-    <version>1.0.4</version>
+    <version>1.0.0</version>
+
     <downloads>
-      <downloadurl type="full" format="zip">https://github.com/nicode/joomla-toolkit/releases/download/v1.0.4/lib_nicode_joomla_toolkit-1.0.4.zip</downloadurl>
+      <downloadurl type="full" format="zip">
+        https://github.com/nicolauroca/joomla-toolkit/releases/download/v1.0.4/lib_nicode_joomla_toolkit-1.0.0.zip
+      </downloadurl>
     </downloads>
-    <infourl title="Release notes">https://nicode.github.io/joomla-toolkit/updates/releases/1.0.4.html</infourl>
+
+    <infourl title="Release notes">
+      https://nicolauroca.github.io/joomla-toolkit/updates/releases/1.0.0.html
+    </infourl>
+
     <tags>
       <tag>stable</tag>
     </tags>
+
     <maintainer>Nicolau Roca</maintainer>
     <maintainerurl>https://nicolauroca.dev</maintainerurl>
-    <targetplatform name="joomla" version="((6\.(0|1|2|3|4|5|6|7|8|9)))" />
+
+    <targetplatform name="joomla" version="((4|5|6)\.\d+)" />
   </update>
 </updates>
