@@ -1,4 +1,4 @@
-# Nicodé Joomla Toolkit (Joomla Library)
+# Nicode Joomla Toolkit (Joomla Library)
 
 Utility library for Joomla 4.x, 5.x, and 6.x designed to reuse helpers across components, modules, and plugins.
 
