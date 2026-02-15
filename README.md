@@ -125,6 +125,6 @@ All code and assets in this package are licensed under GNU General Public Licens
 ## Update server (Joomla Update System)
 This package declares an update server in the manifest. The XML should be hosted at:
 
-- `https://nicode.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml`
+- `https://nicolauroca.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml`
 
 See the `updates/` directory in this repository for the files to publish.
