@@ -6,16 +6,16 @@
 
     <element>lib_nicode_joomla_toolkit</element>
     <type>library</type>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <downloads>
       <downloadurl type="full" format="zip">
-        https://github.com/nicolauroca/joomla-toolkit/releases/download/v1.0.4/lib_nicode_joomla_toolkit-1.0.0.zip
+        https://github.com/nicolauroca/joomla-toolkit/releases/download/v1.0.1/lib_nicode_joomla_toolkit-1.0.1.zip
       </downloadurl>
     </downloads>
 
     <infourl title="Release notes">
-      https://nicolauroca.github.io/joomla-toolkit/updates/releases/1.0.0.html
+      https://nicolauroca.github.io/joomla-toolkit/updates/releases/1.0.1.html
     </infourl>
 
     <tags>

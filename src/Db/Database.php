@@ -149,4 +149,47 @@ final class Database
         $id = self::db()->insertid();
         return $id === null ? null : (int) $id;
     }
+
+    /**
+     * Add a WHERE ... IN (...) clause with safe bound parameters.
+     *
+     * Typical usage with Joomla's query builder:
+     * <code>
+     * $db = Database::db();
+     * $q  = $db->getQuery(true)
+     *   ->select('*')
+     *   ->from($db->quoteName('#__some_table'));
+     * Database::whereIn($db, $q, 'id', [1,2,3], 'id', ParameterType::INTEGER);
+     * $rows = Database::objectList($q);
+     * </code>
+     *
+     * If $values is empty, the helper adds a `1=0` condition.
+     *
+     * @param array<int, scalar> $values List of scalar values to bind.
+     */
+    public static function whereIn(
+        DatabaseInterface $db,
+        QueryInterface $query,
+        string $column,
+        array $values,
+        string $paramPrefix = 'in',
+        int $type = ParameterType::INTEGER
+    ): void {
+        $values = array_values(array_filter($values, static fn($v) => $v !== null && $v !== ''));
+
+        if ($values === []) {
+            $query->where('1=0');
+            return;
+        }
+
+        $placeholders = [];
+        foreach ($values as $i => $value) {
+            $key = $paramPrefix . $i;
+            $placeholders[] = ':' . $key;
+            // Joomla expects named placeholders without ":" in bind() keys.
+            $db->bind($key, $value, $type);
+        }
+
+        $query->where($db->quoteName($column) . ' IN (' . implode(',', $placeholders) . ')');
+    }
 }

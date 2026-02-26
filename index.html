@@ -18,37 +18,81 @@ body {
 header {
   background: #111827;
   color: #fff;
-  padding: 60px 20px;
+  padding: 64px 20px;
   text-align: center;
 }
 
 header h1 {
   margin: 0;
   font-size: 2.4rem;
+  letter-spacing: 0.2px;
 }
 
 header p {
-  margin-top: 15px;
+  margin: 14px auto 0;
+  max-width: 900px;
   font-size: 1.1rem;
   opacity: 0.9;
+}
+
+.badges {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  font-size: 0.92rem;
 }
 
 .container {
   max-width: 1000px;
   margin: auto;
-  padding: 40px 20px;
+  padding: 40px 20px 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 18px 18px;
+  box-shadow: 0 1px 0 rgba(17,24,39,0.03);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 18px;
+  }
 }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 52px;
   border-bottom: 2px solid #e5e7eb;
   padding-bottom: 10px;
+}
+
+h3 {
+  margin: 0 0 8px;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 18px;
   background: #fff;
 }
 
@@ -56,6 +100,7 @@ th, td {
   padding: 10px;
   border: 1px solid #e5e7eb;
   text-align: left;
+  vertical-align: top;
 }
 
 th {
@@ -65,17 +110,18 @@ th {
 code {
   background: #111827;
   color: #e5e7eb;
-  padding: 4px 6px;
+  padding: 3px 6px;
   border-radius: 4px;
-  font-size: 0.9em;
+  font-size: 0.92em;
 }
 
 pre {
   background: #111827;
   color: #e5e7eb;
-  padding: 15px;
+  padding: 14px 16px;
   overflow-x: auto;
-  border-radius: 6px;
+  border-radius: 8px;
+  margin: 14px 0 0;
 }
 
 a {
@@ -87,14 +133,20 @@ a:hover {
   text-decoration: underline;
 }
 
+small {
+  color: #6b7280;
+}
+
 footer {
-  margin-top: 60px;
-  padding: 30px;
+  margin-top: 64px;
+  padding: 30px 20px;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   background: #111827;
   color: #ccc;
 }
+
+footer a { color: #93c5fd; }
 </style>
 </head>
 
@@ -102,125 +154,190 @@ footer {
 
 <header>
   <h1>Nicode Joomla Toolkit</h1>
-  <p>Reusable utility library for Joomla 4, 5 and 6 extension development.</p>
+  <p>
+    Reusable PHP utility library for Joomla 4, 5 and 6 extension development:
+    database helpers, request/input handling, escaping, UI components, file maintenance and more.
+  </p>
+
+  <div class="badges" aria-label="Project badges">
+    <span class="badge">Latest: <strong>v1.0.1</strong></span>
+    <span class="badge">Joomla: <strong>4.x · 5.x · 6.x</strong></span>
+    <span class="badge">License: <strong>GPL-2.0-or-later</strong></span>
+    <span class="badge">PSR-4</span>
+  </div>
 </header>
 
 <div class="container">
 
-<h2>Overview</h2>
-<p>
-Nicode Joomla Toolkit is a lightweight PHP library designed to reduce repetitive 
-code in Joomla extensions. It centralizes common tasks such as database queries,
-asset registration, request handling, escaping, UI helpers and file maintenance.
-</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Overview</h3>
+      <p style="margin:0;">
+        Nicode Joomla Toolkit is a lightweight PHP library designed to reduce repetitive code in Joomla extensions.
+        It centralizes common tasks such as database queries, asset registration, request handling, escaping,
+        UI helpers and file maintenance — keeping your extension code cleaner and easier to maintain.
+      </p>
+    </div>
 
-<h2>Compatibility</h2>
-<ul>
-<li>Joomla 4.x</li>
-<li>Joomla 5.x</li>
-<li>Joomla 6.x</li>
-</ul>
+    <div class="card">
+      <h3>Quick links</h3>
+      <ul style="margin:0; padding-left: 18px;">
+        <li><a href="https://github.com/nicolauroca/joomla-toolkit" target="_blank" rel="noopener">Repository</a></li>
+        <li><a href="https://github.com/nicolauroca/joomla-toolkit/releases" target="_blank" rel="noopener">Releases</a></li>
+        <li><a href="https://nicolauroca.dev/" target="_blank" rel="noopener">Developer website</a></li>
+      </ul>
+      <p style="margin:12px 0 0;">
+        <small>Tip: open the Releases page to download the installable ZIP.</small>
+      </p>
+    </div>
+  </div>
 
-<h2>Installation</h2>
-<p>Install the ZIP package via:</p>
-<pre>System → Install → Extensions</pre>
+  <h2>Compatibility</h2>
+  <ul>
+    <li>Joomla 4.x</li>
+    <li>Joomla 5.x</li>
+    <li>Joomla 6.x</li>
+  </ul>
 
-<h2>Included Modules</h2>
+  <h2>Installation</h2>
+  <div class="card">
+    <p style="margin:0 0 10px;">
+      Download the library ZIP from the <a href="https://github.com/nicolauroca/joomla-toolkit/releases" target="_blank" rel="noopener">Releases</a> page
+      and install it in Joomla:
+    </p>
+    <pre>System → Install → Extensions → Upload Package File</pre>
+    <p style="margin:10px 0 0;">
+      <small>After installation, the library is available to your extensions via its PSR-4 namespace.</small>
+    </p>
+  </div>
 
-<table>
-<tr>
-<th>Module</th>
-<th>Class</th>
-<th>Purpose</th>
-</tr>
+  <h2>What's New in 1.0.1</h2>
+  <div class="card">
+    <ul style="margin:0; padding-left: 18px;">
+      <li>Installation packaging and manifest refinements (stable install flow).</li>
+      <li>Same public API and module set as 1.0.0 (drop-in upgrade).</li>
+      <li>Web assets included for tables and progress bar styling.</li>
+    </ul>
+    <p style="margin:10px 0 0;">
+      <small>See the full list in the release notes on GitHub Releases.</small>
+    </p>
+  </div>
 
-<tr>
-<td>Assets</td>
-<td><code>Nicode\Joomla\Toolkit\Assets</code></td>
-<td>Registers CSS/JS assets via WebAssetManager</td>
-</tr>
+  <h2>Included Modules</h2>
 
-<tr>
-<td>Db</td>
-<td><code>Nicode\Joomla\Toolkit\Db\Database</code></td>
-<td>Query facade with bind support</td>
-</tr>
+  <table>
+    <tr>
+      <th>Area</th>
+      <th>Class</th>
+      <th>Purpose</th>
+    </tr>
 
-<tr>
-<td>Input</td>
-<td><code>Nicode\Joomla\Toolkit\Input\Request</code></td>
-<td>Safe GET/POST access</td>
-</tr>
+    <tr>
+      <td>Assets</td>
+      <td><code>Nicode\Joomla\Toolkit\Assets</code></td>
+      <td>Registers CSS/JS assets via Joomla’s WebAssetManager</td>
+    </tr>
 
-<tr>
-<td>Date</td>
-<td><code>Nicode\Joomla\Toolkit\Date\DateText</code></td>
-<td>Human-readable date ranges</td>
-</tr>
+    <tr>
+      <td>Db</td>
+      <td><code>Nicode\Joomla\Toolkit\Db\Database</code></td>
+      <td>Query facade with bind support (quick reads and helpers)</td>
+    </tr>
 
-<tr>
-<td>Html</td>
-<td><code>Nicode\Joomla\Toolkit\Html\Esc</code></td>
-<td>Safe HTML escaping helpers</td>
-</tr>
+    <tr>
+      <td>Input</td>
+      <td><code>Nicode\Joomla\Toolkit\Input\Request</code></td>
+      <td>Safe GET/POST access helpers</td>
+    </tr>
 
-<tr>
-<td>Html</td>
-<td><code>Nicode\Joomla\Toolkit\Html\TableBuilder</code></td>
-<td>Generate accessible tables from arrays</td>
-</tr>
+    <tr>
+      <td>Date</td>
+      <td><code>Nicode\Joomla\Toolkit\Date\DateText</code></td>
+      <td>Human-readable date ranges</td>
+    </tr>
 
-<tr>
-<td>Ui</td>
-<td><code>Nicode\Joomla\Toolkit\Ui\ProgressBar</code></td>
-<td>Accessible progress bar component</td>
-</tr>
+    <tr>
+      <td>Html</td>
+      <td><code>Nicode\Joomla\Toolkit\Html\Esc</code></td>
+      <td>Safe HTML escaping helpers</td>
+    </tr>
 
-<tr>
-<td>Fs</td>
-<td><code>Nicode\Joomla\Toolkit\Fs\Cleaner</code></td>
-<td>Old file cleanup utility</td>
-</tr>
+    <tr>
+      <td>Html</td>
+      <td><code>Nicode\Joomla\Toolkit\Html\TableBuilder</code></td>
+      <td>Generate accessible tables from arrays</td>
+    </tr>
 
-<tr>
-<td>Util</td>
-<td><code>Nicode\Joomla\Toolkit\Util\Arr</code></td>
-<td>Array filtering helpers</td>
-</tr>
+    <tr>
+      <td>Ui</td>
+      <td><code>Nicode\Joomla\Toolkit\Ui\ProgressBar</code></td>
+      <td>Accessible progress bar component</td>
+    </tr>
 
-</table>
+    <tr>
+      <td>Fs</td>
+      <td><code>Nicode\Joomla\Toolkit\Fs\Cleaner</code></td>
+      <td>Old file cleanup utility</td>
+    </tr>
 
-<h2>Basic Usage</h2>
+    <tr>
+      <td>Util</td>
+      <td><code>Nicode\Joomla\Toolkit\Util\Arr</code></td>
+      <td>Array filtering helpers</td>
+    </tr>
 
-<pre>
+  </table>
+
+  <h2>Basic Usage</h2>
+  <div class="card">
+    <p style="margin:0 0 10px;">
+      Example: run a simple database query using the toolkit facade:
+    </p>
+    <pre>
 use Nicode\Joomla\Toolkit\Db\Database;
 
 $value = Database::result('SELECT 1');
 </pre>
+    <p style="margin:10px 0 0;">
+      <small>Use this inside your Joomla extension code where the Joomla framework is available.</small>
+    </p>
+  </div>
 
-<h2>Web Assets</h2>
-<p>
-Installs <code>media/lib_nicode_joomla_toolkit/joomla.asset.json</code>
-with table and progress bar styles ready to use.
-</p>
+  <h2>Web Assets</h2>
+  <div class="card">
+    <p style="margin:0 0 10px;">
+      The library ships with a Web Asset Manifest and default styles:
+    </p>
+    <ul style="margin:0; padding-left: 18px;">
+      <li><code>media/lib_nicode_joomla_toolkit/joomla.asset.json</code></li>
+      <li><code>media/lib_nicode_joomla_toolkit/css/table.css</code></li>
+      <li><code>media/lib_nicode_joomla_toolkit/css/progressbar.css</code></li>
+    </ul>
+  </div>
 
-<h2>Resources</h2>
-<ul>
-<li><a href="https://github.com/nicolauroca/joomla-toolkit" target="_blank">GitHub Repository</a></li>
-<li><a href="https://github.com/nicolauroca/joomla-toolkit/releases" target="_blank">Releases</a></li>
-<li><a href="https://nicolauroca.dev/" target="_blank">Developer Website</a></li>
-</ul>
+  <h2>Update Server</h2>
+  <div class="card">
+    <p style="margin:0 0 10px;">
+      Update XML hosted at:
+    </p>
+    <p style="margin:0;">
+      <code>https://nicolauroca.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml</code>
+    </p>
+    <p style="margin:10px 0 0;">
+      <small>Configured in the library manifest via <code>&lt;updateservers&gt;</code>.</small>
+    </p>
+  </div>
 
-<h2>Update Server</h2>
-<p>
-Update XML hosted at:<br>
-<code>https://nicolauroca.github.io/joomla-toolkit/updates/lib_nicode_joomla_toolkit.xml</code>
-</p>
+  <h2>License</h2>
+  <p>
+    Released under the GNU General Public License v2 or later.
+  </p>
 
 </div>
 
 <footer>
-© 2026 Nicolau Roca — GNU GPL v2 or later
+  © 2026 Nicolau Roca — GNU GPL v2 or later ·
+  <a href="https://github.com/nicolauroca/joomla-toolkit" target="_blank" rel="noopener">GitHub</a>
 </footer>
 
 </body>
